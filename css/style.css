@@ -1164,7 +1164,7 @@ small {
 }
 
 .p-message__wrapper__contents {
-  margin: 0;
+  margin: 0 4vw;
   background-color: rgba(0, 0, 0, 0.24);
   padding: 126px 6vw 80px 6vw;
 }
