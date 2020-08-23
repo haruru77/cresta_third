@@ -28,6 +28,7 @@
             }
             &:nth-of-type(2) {
                 @include break($tb) {
+                    margin-left: 4vw;
                     padding-top: 40px;
                 }
                 @include break($pc) {
