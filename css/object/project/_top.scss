@@ -13,7 +13,7 @@
                 }
             }
             &__bgimg {
-                background-image: url(/img/kv-img.png);
+                background-image: url(../img/kv-img.png);
                 background-size: cover;
                 background-position: center;
                 position: absolute;
@@ -23,7 +23,7 @@
                 height: 85vh;
                 z-index: -1;
                 &__about {
-                    background-image: url(/img/about-top-img.png);
+                    background-image: url(../img/about-top-img.png);
                     background-size: cover;
                     background-position: top;
                     position: absolute;
@@ -37,7 +37,7 @@
                     }
                 }
                 &__contact {
-                    background-image: url(/img/contact-img.png);
+                    background-image: url(../img/contact-img.png);
                     background-size: cover;
                     background-position: top;
                     position: absolute;
