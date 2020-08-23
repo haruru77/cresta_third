@@ -1,0 +1,30 @@
+.p-contact {
+    background-color: #F2F2F2;
+    &__pc {
+        @include break($pc) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        img {
+            padding-top: 30px;
+            padding-bottom: 40px;
+            @include break($pc) {
+                order: 2;
+                max-width: 580px;
+                padding-top: 60px;
+                padding-bottom: 120px;
+            }
+        }
+        &__desc {
+            p {
+                font-size: 1.6rem;
+                line-height: 2;
+            }
+            @include break($pc) {
+                order: 1;
+                width: 40%;
+            }
+        }
+    }
+}

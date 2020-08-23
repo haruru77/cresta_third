@@ -1,0 +1,86 @@
+        .p-header {
+            &__logo {
+                position: fixed;
+                z-index: 5;
+                top: 20px;
+                left: 2vw;
+                a {
+                    text-decoration: none;
+                }
+                a:hover {
+                    opacity: .7;
+                    transition: .3s;
+                }
+                svg {
+                    width: 189px;
+                    height: auto;
+                    @include break($pc) {
+                        width: 260px;
+                    }
+                }
+                &__svg.black path {
+                    transition: .4s ease-in-out;
+                    fill: #333333;
+                }
+            }
+            &__menu {
+                position: fixed;
+                z-index: 1000;
+                cursor: pointer;
+                top: 30px;
+                right: 4vw;
+                width: 61px;
+                height: 13px;
+                display: flex;
+                justify-content: space-between;
+                &:hover {
+                    opacity: .7;
+                    transition: .3s;
+                }
+                &__hamburger {
+                    span {
+                        width: 22px;
+                        height: 2px;
+                        border-radius: 1px;
+                        position: absolute;
+                        display: block;
+                        background-color: #FFFDFD;
+                        transform: rotate(0deg);
+                        transition: .4s ease-in-out;
+                        &.black {
+                            background-color: #333333;
+                        }
+                    }
+                    span:nth-child(1) {
+                        top: 0px;
+                    }
+                    span:nth-child(2) {
+                        top: 5px;
+                    }
+                    span:nth-child(3) {
+                        top: 10px;
+                    }
+                    &.show span:nth-child(1) {
+                        top: 5px;
+                        transform: rotate(30deg);
+                    }
+                    &.show span:nth-child(2) {
+                        width: 0;
+                    }
+                    &.show span:nth-child(3) {
+                        top: 5px;
+                        transform: rotate(-30deg);
+                    }
+                    &__menu {
+                        font-size: 1rem;
+                        font-weight: 800;
+                        color: #ffffff;
+                        line-height: 13px;
+                        transition: .4s ease-in-out;
+                        &.black {
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+        }

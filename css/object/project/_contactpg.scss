@@ -1,0 +1,139 @@
+.p-contactpg {
+    margin: 0 4vw;
+    padding-top: 80px;
+    @include break($pc) {
+        padding-top: 120px;
+    }
+    >p {
+        font-size: 1.4rem;
+        line-height: 1.7;
+        @include break($tb) {
+            font-size: 1.6rem;
+        }
+    }
+    &__form {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        @include break($pc) {
+            padding-bottom: 120px;
+        }
+        &__ttl {
+            display: inline-block;
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            &:first-child {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-top: 20px;
+            margin-bottom: 0;
+            @include break($tb) {
+                display: flex;
+                margin-top: 15px;
+            }
+            li {
+                margin-top: 15px;
+                label {
+                    padding-left: 10px;
+                    cursor: pointer;
+                }
+                @include break($tb) {
+                    margin-top: 0;
+                    margin-right: 50px;
+                }
+            }
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            height: 48px;
+            border: 1px solid #333333;
+        }
+        input[type="email"] {
+            padding: 10px;
+            width: 100%;
+            height: 48px;
+            border: 1px solid #333333;
+        }
+        input[type="tel"] {
+            padding: 10px;
+            width: 100%;
+            height: 48px;
+            border: 1px solid #333333;
+        }
+        textarea {
+            padding: 10px;
+            width: 100%;
+            height: 210px;
+            border: 1px solid #333333;
+            @include break($tb) {
+                height: 180px;
+            }
+            @include break($pc) {
+                height: 212px;
+            }
+        }
+        &__privacy {
+            margin-top: 40px;
+            >p {
+                font-weight: 800;
+            }
+            &__box {
+                margin-top: 10px;
+                padding: 10px;
+                height: 226px;
+                border: 1px solid #333333;
+                overflow-y: scroll;
+                @include break($pc) {
+                    height: 252px;
+                }
+                p {
+                    font-size: 1.4rem;
+                    line-height: 1.7;
+                    @include break($tb) {
+                        font-size: 1.6rem;
+                    }
+                    &:first-of-type {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        &__check {
+            margin-top: 40px;
+            @include break($tb) {
+                text-align: center;
+            }
+            label {
+                padding-left: 10px;
+                font-size: 1.4rem;
+                cursor: pointer;
+                @include break($tb) {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &__submit {
+            text-align: center;
+            input[type="submit"] {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;
+                display: inline-block;
+                background-color: #000000;
+                width: 160px;
+                height: 36px;
+                transition: .3s;
+                color: #ffffff;
+                text-align: center;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.p-works-culture {
+    padding-top: 40px;
+    background-color: #F0F0F0;
+    @include break($tb) {
+        padding-top: 60px;
+    }
+    @include break($pc) {
+        padding-top: 80px;
+    }
+    &__contents {
+        @include break($pc) {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__content {
+            max-width: 520px;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                @include break($pc) {
+                    height: 350px;
+                }
+            }
+            p {
+                margin-top: 30px;
+                font-size: 1.6rem;
+            }
+            &:nth-of-type(2) {
+                @include break($tb) {
+                    padding-top: 40px;
+                }
+                @include break($pc) {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}

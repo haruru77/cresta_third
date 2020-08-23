@@ -1,0 +1,58 @@
+.p-aboutus {
+    position: relative;
+    &::after {
+        @include break($pc) {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: #F0F0F0;
+            width: 100%;
+            height: 110px;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+    &__bgimg {
+        margin-top: 78px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-image: url(/img/about-img.png);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        @include break($tb) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        @include break($pc) {
+            padding-top: 110px;
+            padding-bottom: 110px;
+        }
+        &__desc {
+            margin: 0 4vw;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding-left: 30px;
+            @include break($tb) {
+                margin: 0 8vw;
+            }
+            @include break($pc) {
+                margin: 0 4vw;
+                width: 54%;
+            }
+            h2 {
+                padding-top: 50px;
+            }
+            p {
+                padding-right: 15px;
+                font-size: 1.4rem;
+                line-height: 2;
+                @include break($tb) {
+                    font-size: 1.6rem;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}
