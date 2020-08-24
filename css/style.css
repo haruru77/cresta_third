@@ -870,6 +870,7 @@ small {
   width: 100%;
   height: 48px;
   border: 1px solid #333333;
+  color: #333333;
 }
 
 .p-contactpg__form input[type="email"] {
@@ -877,6 +878,7 @@ small {
   width: 100%;
   height: 48px;
   border: 1px solid #333333;
+  color: #333333;
 }
 
 .p-contactpg__form input[type="tel"] {
@@ -884,6 +886,7 @@ small {
   width: 100%;
   height: 48px;
   border: 1px solid #333333;
+  color: #333333;
 }
 
 .p-contactpg__form textarea {
@@ -891,6 +894,7 @@ small {
   width: 100%;
   height: 210px;
   border: 1px solid #333333;
+  color: #333333;
 }
 
 @media (min-width: 641px) {
@@ -981,6 +985,13 @@ small {
   color: #ffffff;
   text-align: center;
   font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.p-contactpg__form__submit input[type="submit"]:hover {
+  opacity: 0.7;
+  -webkit-transition: .3;
+  transition: .3;
 }
 
 .p-works-culture {
